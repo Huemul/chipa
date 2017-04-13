@@ -1,0 +1,31 @@
+{
+  "name": "dig",
+  "version": "0.0.1",
+  "description": "extract snippets from md files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillchristian/dig.git"
+  },
+  "keywords": [
+    "markdown",
+    "snippets",
+    "code",
+    "extract"
+  ],
+  "author": "Christian Gill <gillchristiang@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gillchristian/dig/issues"
+  },
+  "homepage": "https://github.com/gillchristian/dig#readme",
+  "dependencies": {
+    "data.task": "^3.1.1",
+    "markdown-to-ast": "^3.4.0",
+    "ramda": "^0.23.0",
+    "remark": "^7.0.0"
+  }
+}
