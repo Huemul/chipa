@@ -35,7 +35,10 @@ const isLangBlock = lang => R.both(
 const pick = R.pick([ 'lang', 'value' ])
 
 // extractMeta :: String -> String
-const extractMeta = lang => R.replace(langMatcher(lang), '')
+const extractMeta = lang => R.compose(
+  R.trim,
+  R.replace(langMatcher(lang), '')
+)
 
 // extractLang :: String -> String
 const extractLang = lang => R.compose(
@@ -46,8 +49,8 @@ const extractLang = lang => R.compose(
 // perseMeta :: String -> Object -> Object
 const parseMeta = lang => (node) => ({
   value: node.value,
-  lang: extractLang(lang)(node.lang),
-  meta: extractMeta(lang)(node.lang)
+  lang: node.lang && extractLang(lang)(node.lang),
+  meta: node.lang && extractMeta(lang)(node.lang)
 })
 
 // hasSnippets :: [Object] -> [Object]
