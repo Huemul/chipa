@@ -1,14 +1,14 @@
 {
-  "name": "dig",
+  "name": "chipa",
   "version": "0.0.1",
-  "description": "extract snippets from md files",
+  "description": "Extract code snippets from md files.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gillchristian/dig.git"
+    "url": "git+https://github.com/gillchristian/chipa.git"
   },
   "keywords": [
     "markdown",
@@ -19,9 +19,9 @@
   "author": "Christian Gill <gillchristiang@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gillchristian/dig/issues"
+    "url": "https://github.com/gillchristian/chipa/issues"
   },
-  "homepage": "https://github.com/gillchristian/dig#readme",
+  "homepage": "https://github.com/gillchristian/chipa#readme",
   "dependencies": {
     "glob": "^7.1.1",
     "markdown-to-ast": "^3.4.0",
