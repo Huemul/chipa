@@ -4,7 +4,7 @@
   "description": "Extract code snippets from md files.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
@@ -27,5 +27,19 @@
     "markdown-to-ast": "^3.4.0",
     "ramda": "^0.23.0",
     "remark": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^19.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "statements": 90,
+        "branches": 90,
+        "functions": 90,
+        "lines": 90
+      }
+    }
   }
 }
