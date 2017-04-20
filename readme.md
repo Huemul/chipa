@@ -16,7 +16,7 @@ parseFile('README.md', ['js', 'javascript'])
     // ...
   })
 
-parsePath('docs/*.md', ['js', 'javascript'])
+parsePath('docs/*.md', 'ruby')
   .then((res) => {
     res // an array with an object per file
 

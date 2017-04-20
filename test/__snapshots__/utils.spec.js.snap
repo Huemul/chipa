@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`readFile rejects with the ENOET error 1`] = `[Error: ENOENT: no such file or directory, open './test/non-existent.txt']`;
+
+exports[`readFile resolves with the content of a file 1`] = `
+"# an md file with no code
+
+> no snippets should be extracted from this file
+"
+`;

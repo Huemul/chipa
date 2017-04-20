@@ -56,25 +56,25 @@ const parseMeta = lang => (node) => ({
 // hasSnippets :: [Object] -> [Object]
 const hasSnippets = R.compose(Boolean, R.length, R.prop('snippets'))
 
-// parseFile :: String -> Object? -> Promise(Object)
-const parseFile = (file, config = { }) => {
+// parseFile :: String -> String? -> Promise(Object)
+const parseFile = (file, lang) => {
   return readFile(file)
     .then(remark.parse)
     .then(R.prop('children'))
-    .then(R.filter(isLangBlock(config.lang)))
+    .then(R.filter(isLangBlock(lang)))
     .then(R.map(pick))
-    .then(R.map(parseMeta(config.lang)))
-    .then(s => ({ snippets: s, file, lang: config.lang || 'all' }))
+    .then(R.map(parseMeta(lang)))
+    .then(s => ({ snippets: s, file, lang: lang || 'all' }))
 }
 
-// parseFile :: String -> Object? -> Promise([Object])
-const parsePath = (path, config = {}) => new Promise((res, resj) => {
+// parseFile :: String -> String? -> Promise([Object])
+const parsePath = (path, lang) => new Promise((res, resj) => {
   glob(path, (err, files) => {
     if (err) {
       rej(err)
     }
     const all = Promise
-      .all(files.map(parseFile))
+      .all(files.map(file => parseFile(file, lang)))
       .then(R.filter(hasSnippets))
 
     res(all)
