@@ -7,7 +7,7 @@
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5",
     "test": "jest --verbose",
     "format": "npm run prettier -- --write './lib/**/*.js' && npm run prettier -- --write './test/**/*.js'",
-    "precommit": "npm run format"
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
   "devDependencies": {
     "husky": "^0.13.3",
     "jest": "^19.0.2",
+    "lint-staged": "^3.4.0",
     "prettier": "^1.2.2"
   },
   "jest": {
@@ -46,5 +47,15 @@
         "lines": 90
       }
     }
+  },
+  "lint-staged": {
+    "./test/**/*.js": [
+      "npm run prettier -- --write",
+      "git add"
+    ],
+    "./lib/**/*.js": [
+      "npm run prettier -- --write",
+      "git add"
+    ]
   }
 }
