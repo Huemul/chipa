@@ -6,7 +6,7 @@
   "scripts": {
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5",
     "test": "jest --verbose",
-    "format": "npm run prettier -- --write './lib/**/*.js' && npm run prettier -- --write './test/**/*.js'",
+    "format": "npm run prettier -- --write 'lib/**/*.js' && npm run prettier -- --write 'test/**/*.js'",
     "precommit": "lint-staged"
   },
   "repository": {
@@ -49,11 +49,11 @@
     }
   },
   "lint-staged": {
-    "./test/**/*.js": [
+    "test/**/*.js": [
       "npm run prettier -- --write",
       "git add"
     ],
-    "./lib/**/*.js": [
+    "lib/**/*.js": [
       "npm run prettier -- --write",
       "git add"
     ]
