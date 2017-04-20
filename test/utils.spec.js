@@ -1,18 +1,15 @@
-const { readFile } = require('../utils')
+const { readFile } = require('../lib/utils')
 
 describe('readFile', () => {
   it('resolves with the content of a file', () => {
-    return readFile('./test/no-code.md')
-      .then(content => {
-        expect(content).toMatchSnapshot()
-      })
+    return readFile('./test/no-code.md').then(content => {
+      expect(content).toMatchSnapshot()
+    })
   })
 
   it('rejects with the ENOET error', () => {
-    return readFile('./test/non-existent.txt')
-      .catch(error => {
-        expect(error).toMatchSnapshot()
-      })
+    return readFile('./test/non-existent.txt').catch(error => {
+      expect(error).toMatchSnapshot()
+    })
   })
 })
-

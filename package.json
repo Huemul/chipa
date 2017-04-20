@@ -2,9 +2,12 @@
   "name": "chipa",
   "version": "0.0.1",
   "description": "Extract code snippets from md files.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "jest --verbose"
+    "prettier": "prettier --no-semi --single-quote --trailing-comma es5",
+    "test": "jest --verbose",
+    "format": "npm run prettier -- --write './lib/**/*.js' && npm run prettier -- --write './test/**/*.js'",
+    "precommit": "npm run format"
   },
   "repository": {
     "type": "git",
@@ -29,7 +32,9 @@
     "remark": "^7.0.0"
   },
   "devDependencies": {
-    "jest": "^19.0.2"
+    "husky": "^0.13.3",
+    "jest": "^19.0.2",
+    "prettier": "^1.2.2"
   },
   "jest": {
     "testEnvironment": "node",
