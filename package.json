@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gillchristian/chipa.git"
+    "url": "git+https://github.com/Huemul/chipa.git"
   },
   "keywords": [
     "markdown",
@@ -22,9 +22,9 @@
   "author": "Christian Gill <gillchristiang@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gillchristian/chipa/issues"
+    "url": "https://github.com/Huemul/chipa/issues"
   },
-  "homepage": "https://github.com/gillchristian/chipa#readme",
+  "homepage": "https://github.com/Huemul/chipa#readme",
   "dependencies": {
     "glob": "^7.1.1",
     "markdown-to-ast": "^3.4.0",
