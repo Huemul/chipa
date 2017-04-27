@@ -1,6 +1,6 @@
 {
   "name": "chipa",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Extract code snippets from md files.",
   "main": "lib/index.js",
   "scripts": {
