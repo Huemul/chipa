@@ -25,9 +25,9 @@ extractSingle :: String -> String?|[String]? -> Promise(FileResult)
 extractSingle(filePath: String, language?: String|[String])
 ```
 
-`filePath`: file path.
+- `filePath`: file path.
 
-`language`: the language to search for. If not provided will match every
+- `language`: the language to search for. If not provided will match every
 language.
 
 ```js
@@ -47,9 +47,9 @@ extract :: String -> String?|[String]? -> Promise([FileResult])
 extract(glob: String, language?: String|[String])
 ```
 
-`glob`: any valid [`node-glob`](https://github.com/isaacs/node-glob) pattern.
+- `glob`: any valid [`node-glob`](https://github.com/isaacs/node-glob) pattern.
 
-`language`: the language to search for. If not provided will match every
+- `language`: the language to search for. If not provided will match every
 language..
 
 ```js
