@@ -2,6 +2,14 @@
 
 > Easily extract code snippets from Markdown files.
 
+## Installation
+
+```bash
+$ yarn add chipa
+# OR
+$ npm install --save chipa
+```
+
 ## Usage
 
 ### `extractSingle`
