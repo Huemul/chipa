@@ -4,39 +4,49 @@
 
 ## Usage
 
-- `parseFile(filePath: String, language?: String|[String])`
+### `extractSingle`
 
-`filePath`: the file path.
+```
+Snippet :: { lang: String, meta: String, value: String }
+FileResult :: { file: String, lang: String, snippets: [Snippet] }
 
-`language`: the language to search for. If `undefined` will match every language. 
+extractSingle :: String -> String?|[String]? -> Promise(FileResult)
+
+extractSingle(filePath: String, language?: String|[String])
+```
+
+`filePath`: file path.
+
+`language`: the language to search for. If not provided will match every
+language.
 
 ```js
-const { parseFile } = require('chipa')
+const { extractSingle } = require('chipa')
 
-parseFile('README.md', ['js', 'javascript'])
+extractSingle('README.md', ['js', 'javascript'])
   .then((result) => {
-    result.snippets // an array of snippets
-    result.file     // the filename
-    result.lang     // the the language 
-
-    // ...
+    // do stuff with the snippets
   })
 ```
 
-- `parsePath(globPattern: String, language?: String|[String])`
+### `extract`
 
-`globPatter`: any valid [`node-glob`](https://github.com/isaacs/node-glob) pattern.
+```
+extract :: String -> String?|[String]? -> Promise([FileResult])
 
-`language`: the language to search for. If `undefined` will match every language. 
+extract(glob: String, language?: String|[String])
+```
+
+`glob`: any valid [`node-glob`](https://github.com/isaacs/node-glob) pattern.
+
+`language`: the language to search for. If not provided will match every
+language..
 
 ```js
-const { parsePath } = require('chipa')
+const { extract } = require('chipa')
 
-parsePath('docs/*.md', 'go')
+extract('docs/*.md', 'go')
   .then((files) => {
-    files // an array with a result object per file
-
-    // ...
+    // doo stuff with the snippets
   })
 ```
-

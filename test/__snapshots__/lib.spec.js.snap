@@ -1,119 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`parseFile when a language is provided extracts the corresponding snippets from a file 1`] = `
-Object {
-  "file": "./test/snippets.md",
-  "lang": Array [
-    "js",
-    "javascript",
-  ],
-  "snippets": Array [
-    Object {
-      "lang": "js",
-      "meta": "# (meta) (tags)",
-      "value": "console.log(\\"Hello, World!\\")",
-    },
-    Object {
-      "lang": "javascript",
-      "meta": "",
-      "value": "console.log(\\"Hello, World!\\")",
-    },
-  ],
-}
-`;
-
-exports[`parseFile when a language is provided extracts the corresponding snippets from a file 2`] = `
-Object {
-  "file": "./test/snippets.md",
-  "lang": "bash",
-  "snippets": Array [
-    Object {
-      "lang": "bash",
-      "meta": "",
-      "value": "$ echo 'Hello, World!'",
-    },
-  ],
-}
-`;
-
-exports[`parseFile when a language is provided extracts the corresponding snippets from a file 3`] = `
-Object {
-  "file": "./test/snippets.md",
-  "lang": "go",
-  "snippets": Array [
-    Object {
-      "lang": "go",
-      "meta": "",
-      "value": "package main
-
-import \\"fmt\\"
-
-func main() {
-  fmt.Println(\\"Hello, World!\\")
-}",
-    },
-    Object {
-      "lang": "go",
-      "meta": "lang",
-      "value": "package main
-
-import \\"fmt\\"
-
-func main() {
-  fmt.Println(\\"Hello, World!\\")
-}",
-    },
-  ],
-}
-`;
-
-exports[`parseFile when no second argument is passed extracts ALL the snippets from a file 1`] = `
-Object {
-  "file": "./test/snippets.md",
-  "lang": "all",
-  "snippets": Array [
-    Object {
-      "lang": "js",
-      "meta": "# (meta) (tags)",
-      "value": "console.log(\\"Hello, World!\\")",
-    },
-    Object {
-      "lang": "javascript",
-      "meta": "",
-      "value": "console.log(\\"Hello, World!\\")",
-    },
-    Object {
-      "lang": "go",
-      "meta": "",
-      "value": "package main
-
-import \\"fmt\\"
-
-func main() {
-  fmt.Println(\\"Hello, World!\\")
-}",
-    },
-    Object {
-      "lang": "golang",
-      "meta": "",
-      "value": "package main
-
-import \\"fmt\\"
-
-func main() {
-  fmt.Println(\\"Hello, World!\\")
-}",
-    },
-    Object {
-      "lang": "bash",
-      "meta": "",
-      "value": "$ echo 'Hello, World!'",
-    },
-  ],
-}
-`;
-
-exports[`parsePath for a provided glob resolves with the snippets for each files & skips empty ones 1`] = `
+exports[`extract for a provided glob resolves with the snippets for each files & skips empty ones 1`] = `
 Array [
   Object {
     "file": "./test/snippets-2.md",
@@ -170,4 +57,117 @@ func main() {
     ],
   },
 ]
+`;
+
+exports[`extractSingle when a language is provided extracts the corresponding snippets from a file 1`] = `
+Object {
+  "file": "./test/snippets.md",
+  "lang": Array [
+    "js",
+    "javascript",
+  ],
+  "snippets": Array [
+    Object {
+      "lang": "js",
+      "meta": "# (meta) (tags)",
+      "value": "console.log(\\"Hello, World!\\")",
+    },
+    Object {
+      "lang": "javascript",
+      "meta": "",
+      "value": "console.log(\\"Hello, World!\\")",
+    },
+  ],
+}
+`;
+
+exports[`extractSingle when a language is provided extracts the corresponding snippets from a file 2`] = `
+Object {
+  "file": "./test/snippets.md",
+  "lang": "bash",
+  "snippets": Array [
+    Object {
+      "lang": "bash",
+      "meta": "",
+      "value": "$ echo 'Hello, World!'",
+    },
+  ],
+}
+`;
+
+exports[`extractSingle when a language is provided extracts the corresponding snippets from a file 3`] = `
+Object {
+  "file": "./test/snippets.md",
+  "lang": "go",
+  "snippets": Array [
+    Object {
+      "lang": "go",
+      "meta": "",
+      "value": "package main
+
+import \\"fmt\\"
+
+func main() {
+  fmt.Println(\\"Hello, World!\\")
+}",
+    },
+    Object {
+      "lang": "go",
+      "meta": "lang",
+      "value": "package main
+
+import \\"fmt\\"
+
+func main() {
+  fmt.Println(\\"Hello, World!\\")
+}",
+    },
+  ],
+}
+`;
+
+exports[`extractSingle when no second argument is passed extracts ALL the snippets from a file 1`] = `
+Object {
+  "file": "./test/snippets.md",
+  "lang": "all",
+  "snippets": Array [
+    Object {
+      "lang": "js",
+      "meta": "# (meta) (tags)",
+      "value": "console.log(\\"Hello, World!\\")",
+    },
+    Object {
+      "lang": "javascript",
+      "meta": "",
+      "value": "console.log(\\"Hello, World!\\")",
+    },
+    Object {
+      "lang": "go",
+      "meta": "",
+      "value": "package main
+
+import \\"fmt\\"
+
+func main() {
+  fmt.Println(\\"Hello, World!\\")
+}",
+    },
+    Object {
+      "lang": "golang",
+      "meta": "",
+      "value": "package main
+
+import \\"fmt\\"
+
+func main() {
+  fmt.Println(\\"Hello, World!\\")
+}",
+    },
+    Object {
+      "lang": "bash",
+      "meta": "",
+      "value": "$ echo 'Hello, World!'",
+    },
+  ],
+}
 `;

@@ -1,12 +1,12 @@
-const { parseFile, parsePath } = require('../lib')
+const { extractSingle, extract } = require('../lib')
 
-describe('parseFile', () => {
+describe('extractSingle', () => {
   describe('when no second argument is passed', () => {
     it('extracts ALL the snippets from a file', () => {
       // glob uses process.cwd()
       // since jest is being run at the home of the project
       // the path has to be relative to that
-      return parseFile('./test/snippets.md').then(result => {
+      return extractSingle('./test/snippets.md').then(result => {
         expect(result).toMatchSnapshot()
       })
     })
@@ -15,9 +15,9 @@ describe('parseFile', () => {
   describe('when a language is provided', () => {
     it('extracts the corresponding snippets from a file', () => {
       const ps = [
-        parseFile('./test/snippets.md', ['js', 'javascript']),
-        parseFile('./test/snippets.md', 'bash'),
-        parseFile('./test/snippets.md', 'go'),
+        extractSingle('./test/snippets.md', ['js', 'javascript']),
+        extractSingle('./test/snippets.md', 'bash'),
+        extractSingle('./test/snippets.md', 'go'),
       ]
       return Promise.all(ps).then(([js, bash, go]) => {
         expect(js).toMatchSnapshot()
@@ -29,17 +29,17 @@ describe('parseFile', () => {
 
   describe('when the file has no snippets', () => {
     it('resolves with empty snippets', () => {
-      return parseFile('./test/no-code.md').then(result => {
+      return extractSingle('./test/no-code.md').then(result => {
         expect(result.snippets.length).toBe(0)
       })
     })
   })
 })
 
-describe('parsePath', () => {
+describe('extract', () => {
   describe('for a provided glob', () => {
     it('resolves with the snippets for each files & skips empty ones', () => {
-      return parsePath('./test/*.md').then(files => {
+      return extract('./test/*.md').then(files => {
         expect(files).toMatchSnapshot()
       })
     })
