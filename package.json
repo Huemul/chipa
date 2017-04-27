@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "prettier": "prettier --no-semi --single-quote --trailing-comma es5",
-    "test": "jest --verbose",
+    "test": "jest",
     "format": "npm run prettier -- --write 'lib/**/*.js' && npm run prettier -- --write 'test/**/*.js'",
     "precommit": "lint-staged"
   },
