@@ -1,5 +1,7 @@
 # chipa 
 
+[ ![Codeship Status for Huemul/chipa](https://app.codeship.com/projects/42175280-0da9-0135-2ece-46543e024006/status?branch=master)](https://app.codeship.com/projects/215683)
+
 > Easily extract code snippets from Markdown files.
 
 ## Installation
