@@ -3,7 +3,7 @@
 exports[`extract for a provided glob resolves with the snippets for each files & skips empty ones 1`] = `
 Array [
   Object {
-    "file": "./test/snippets-2.md",
+    "file": "snippets-2.md",
     "lang": "all",
     "snippets": Array [
       Object {
@@ -14,7 +14,7 @@ Array [
     ],
   },
   Object {
-    "file": "./test/snippets.md",
+    "file": "snippets.md",
     "lang": "all",
     "snippets": Array [
       Object {
@@ -61,7 +61,7 @@ func main() {
 
 exports[`extractSingle when a language is provided extracts the corresponding snippets from a file 1`] = `
 Object {
-  "file": "./test/snippets.md",
+  "file": "snippets.md",
   "lang": Array [
     "js",
     "javascript",
@@ -83,7 +83,7 @@ Object {
 
 exports[`extractSingle when a language is provided extracts the corresponding snippets from a file 2`] = `
 Object {
-  "file": "./test/snippets.md",
+  "file": "snippets.md",
   "lang": "bash",
   "snippets": Array [
     Object {
@@ -97,7 +97,7 @@ Object {
 
 exports[`extractSingle when a language is provided extracts the corresponding snippets from a file 3`] = `
 Object {
-  "file": "./test/snippets.md",
+  "file": "snippets.md",
   "lang": "go",
   "snippets": Array [
     Object {
@@ -128,7 +128,7 @@ func main() {
 
 exports[`extractSingle when no second argument is passed extracts ALL the snippets from a file 1`] = `
 Object {
-  "file": "./test/snippets.md",
+  "file": "snippets.md",
   "lang": "all",
   "snippets": Array [
     Object {
