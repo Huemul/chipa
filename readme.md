@@ -17,7 +17,8 @@ $ npm install --save chipa
 ### `extractSingle`
 
 ```
-Snippet :: { lang: String, meta: String, value: String, line: Int }
+Position   :: { start: { column: Int, line: Int } }
+Snippet    :: { lang: String, meta: String, value: String, position: Position }
 FileResult :: { file: String, lang: String, snippets: [Snippet] }
 
 extractSingle :: String -> String?|[String]? -> Promise(FileResult)

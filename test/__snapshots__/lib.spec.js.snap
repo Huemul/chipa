@@ -8,8 +8,13 @@ Array [
     "snippets": Array [
       Object {
         "lang": "js",
-        "line": 4,
         "meta": "",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 3,
+          },
+        },
         "value": "console.log(\\"Hello, World!\\")",
       },
     ],
@@ -20,20 +25,35 @@ Array [
     "snippets": Array [
       Object {
         "lang": "js",
-        "line": 4,
         "meta": "# (meta) (tags)",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 3,
+          },
+        },
         "value": "console.log(\\"Hello, World!\\")",
       },
       Object {
         "lang": "javascript",
-        "line": 10,
         "meta": "",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 9,
+          },
+        },
         "value": "console.log(\\"Hello, World!\\")",
       },
       Object {
         "lang": "go",
-        "line": 18,
         "meta": "",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 17,
+          },
+        },
         "value": "package main
 
 import \\"fmt\\"
@@ -44,8 +64,13 @@ func main() {
       },
       Object {
         "lang": "golang",
-        "line": 29,
         "meta": "",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 28,
+          },
+        },
         "value": "package main
 
 import \\"fmt\\"
@@ -56,8 +81,13 @@ func main() {
       },
       Object {
         "lang": "bash",
-        "line": 42,
         "meta": "",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 41,
+          },
+        },
         "value": "$ echo 'Hello, World!'",
       },
     ],
@@ -75,14 +105,24 @@ Object {
   "snippets": Array [
     Object {
       "lang": "js",
-      "line": 4,
       "meta": "# (meta) (tags)",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 3,
+        },
+      },
       "value": "console.log(\\"Hello, World!\\")",
     },
     Object {
       "lang": "javascript",
-      "line": 10,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 9,
+        },
+      },
       "value": "console.log(\\"Hello, World!\\")",
     },
   ],
@@ -96,8 +136,13 @@ Object {
   "snippets": Array [
     Object {
       "lang": "bash",
-      "line": 42,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 41,
+        },
+      },
       "value": "$ echo 'Hello, World!'",
     },
   ],
@@ -111,8 +156,13 @@ Object {
   "snippets": Array [
     Object {
       "lang": "go",
-      "line": 18,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 17,
+        },
+      },
       "value": "package main
 
 import \\"fmt\\"
@@ -123,8 +173,13 @@ func main() {
     },
     Object {
       "lang": "go",
-      "line": 29,
       "meta": "lang",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 28,
+        },
+      },
       "value": "package main
 
 import \\"fmt\\"
@@ -144,20 +199,35 @@ Object {
   "snippets": Array [
     Object {
       "lang": "js",
-      "line": 4,
       "meta": "# (meta) (tags)",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 3,
+        },
+      },
       "value": "console.log(\\"Hello, World!\\")",
     },
     Object {
       "lang": "javascript",
-      "line": 10,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 9,
+        },
+      },
       "value": "console.log(\\"Hello, World!\\")",
     },
     Object {
       "lang": "go",
-      "line": 18,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 17,
+        },
+      },
       "value": "package main
 
 import \\"fmt\\"
@@ -168,8 +238,13 @@ func main() {
     },
     Object {
       "lang": "golang",
-      "line": 29,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 28,
+        },
+      },
       "value": "package main
 
 import \\"fmt\\"
@@ -180,8 +255,13 @@ func main() {
     },
     Object {
       "lang": "bash",
-      "line": 42,
       "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 41,
+        },
+      },
       "value": "$ echo 'Hello, World!'",
     },
   ],
