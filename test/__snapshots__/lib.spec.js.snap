@@ -8,6 +8,7 @@ Array [
     "snippets": Array [
       Object {
         "lang": "js",
+        "line": 4,
         "meta": "",
         "value": "console.log(\\"Hello, World!\\")",
       },
@@ -19,16 +20,19 @@ Array [
     "snippets": Array [
       Object {
         "lang": "js",
+        "line": 4,
         "meta": "# (meta) (tags)",
         "value": "console.log(\\"Hello, World!\\")",
       },
       Object {
         "lang": "javascript",
+        "line": 10,
         "meta": "",
         "value": "console.log(\\"Hello, World!\\")",
       },
       Object {
         "lang": "go",
+        "line": 18,
         "meta": "",
         "value": "package main
 
@@ -40,6 +44,7 @@ func main() {
       },
       Object {
         "lang": "golang",
+        "line": 29,
         "meta": "",
         "value": "package main
 
@@ -51,6 +56,7 @@ func main() {
       },
       Object {
         "lang": "bash",
+        "line": 42,
         "meta": "",
         "value": "$ echo 'Hello, World!'",
       },
@@ -69,11 +75,13 @@ Object {
   "snippets": Array [
     Object {
       "lang": "js",
+      "line": 4,
       "meta": "# (meta) (tags)",
       "value": "console.log(\\"Hello, World!\\")",
     },
     Object {
       "lang": "javascript",
+      "line": 10,
       "meta": "",
       "value": "console.log(\\"Hello, World!\\")",
     },
@@ -88,6 +96,7 @@ Object {
   "snippets": Array [
     Object {
       "lang": "bash",
+      "line": 42,
       "meta": "",
       "value": "$ echo 'Hello, World!'",
     },
@@ -102,6 +111,7 @@ Object {
   "snippets": Array [
     Object {
       "lang": "go",
+      "line": 18,
       "meta": "",
       "value": "package main
 
@@ -113,6 +123,7 @@ func main() {
     },
     Object {
       "lang": "go",
+      "line": 29,
       "meta": "lang",
       "value": "package main
 
@@ -133,16 +144,19 @@ Object {
   "snippets": Array [
     Object {
       "lang": "js",
+      "line": 4,
       "meta": "# (meta) (tags)",
       "value": "console.log(\\"Hello, World!\\")",
     },
     Object {
       "lang": "javascript",
+      "line": 10,
       "meta": "",
       "value": "console.log(\\"Hello, World!\\")",
     },
     Object {
       "lang": "go",
+      "line": 18,
       "meta": "",
       "value": "package main
 
@@ -154,6 +168,7 @@ func main() {
     },
     Object {
       "lang": "golang",
+      "line": 29,
       "meta": "",
       "value": "package main
 
@@ -165,6 +180,7 @@ func main() {
     },
     Object {
       "lang": "bash",
+      "line": 42,
       "meta": "",
       "value": "$ echo 'Hello, World!'",
     },

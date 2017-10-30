@@ -38,8 +38,6 @@ func main() {
 
 # bash
 
-
 ```bash
 $ echo 'Hello, World!'
 ```
-
