@@ -1,15 +1,16 @@
 # javascript
 
-```js # (meta) (tags)
-
+```js (meta) (tags)
 console.log("Hello, World!")
-
 ```
 
 ```javascript
-
 console.log("Hello, World!")
+```
 
+
+```JavaScript
+console.log("Hello, World!")
 ```
 
 # go 
@@ -22,7 +23,6 @@ import "fmt"
 func main() {
   fmt.Println("Hello, World!")
 }
-
 ```
 
 ```golang
@@ -33,7 +33,6 @@ import "fmt"
 func main() {
   fmt.Println("Hello, World!")
 }
-
 ```
 
 # bash

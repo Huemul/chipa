@@ -25,7 +25,7 @@ Array [
     "snippets": Array [
       Object {
         "lang": "js",
-        "meta": "# (meta) (tags)",
+        "meta": "(meta) (tags)",
         "position": Object {
           "start": Object {
             "column": 1,
@@ -40,7 +40,18 @@ Array [
         "position": Object {
           "start": Object {
             "column": 1,
-            "line": 9,
+            "line": 7,
+          },
+        },
+        "value": "console.log(\\"Hello, World!\\")",
+      },
+      Object {
+        "lang": "JavaScript",
+        "meta": "",
+        "position": Object {
+          "start": Object {
+            "column": 1,
+            "line": 12,
           },
         },
         "value": "console.log(\\"Hello, World!\\")",
@@ -51,7 +62,7 @@ Array [
         "position": Object {
           "start": Object {
             "column": 1,
-            "line": 17,
+            "line": 18,
           },
         },
         "value": "package main
@@ -85,7 +96,7 @@ func main() {
         "position": Object {
           "start": Object {
             "column": 1,
-            "line": 41,
+            "line": 40,
           },
         },
         "value": "$ echo 'Hello, World!'",
@@ -105,7 +116,7 @@ Object {
   "snippets": Array [
     Object {
       "lang": "js",
-      "meta": "# (meta) (tags)",
+      "meta": "(meta) (tags)",
       "position": Object {
         "start": Object {
           "column": 1,
@@ -120,7 +131,7 @@ Object {
       "position": Object {
         "start": Object {
           "column": 1,
-          "line": 9,
+          "line": 7,
         },
       },
       "value": "console.log(\\"Hello, World!\\")",
@@ -140,7 +151,7 @@ Object {
       "position": Object {
         "start": Object {
           "column": 1,
-          "line": 41,
+          "line": 40,
         },
       },
       "value": "$ echo 'Hello, World!'",
@@ -160,7 +171,7 @@ Object {
       "position": Object {
         "start": Object {
           "column": 1,
-          "line": 17,
+          "line": 18,
         },
       },
       "value": "package main
@@ -199,7 +210,7 @@ Object {
   "snippets": Array [
     Object {
       "lang": "js",
-      "meta": "# (meta) (tags)",
+      "meta": "(meta) (tags)",
       "position": Object {
         "start": Object {
           "column": 1,
@@ -214,7 +225,18 @@ Object {
       "position": Object {
         "start": Object {
           "column": 1,
-          "line": 9,
+          "line": 7,
+        },
+      },
+      "value": "console.log(\\"Hello, World!\\")",
+    },
+    Object {
+      "lang": "JavaScript",
+      "meta": "",
+      "position": Object {
+        "start": Object {
+          "column": 1,
+          "line": 12,
         },
       },
       "value": "console.log(\\"Hello, World!\\")",
@@ -225,7 +247,7 @@ Object {
       "position": Object {
         "start": Object {
           "column": 1,
-          "line": 17,
+          "line": 18,
         },
       },
       "value": "package main
@@ -259,7 +281,7 @@ func main() {
       "position": Object {
         "start": Object {
           "column": 1,
-          "line": 41,
+          "line": 40,
         },
       },
       "value": "$ echo 'Hello, World!'",
